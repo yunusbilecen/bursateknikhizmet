@@ -1,0 +1,73 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  15. CTA CSS START
+/*----------------------------------------*/
+
+// CTA STYLE
+.cta {
+	&__title {
+		&-wrapper {
+			max-width: 615px;
+			line-height: 1;
+		}
+	}
+	&__paragraph {
+		color: var(--clr-text-9);
+		margin-bottom: 0;
+	}
+	&__contact {
+		&-inner {
+			padding: 60px 0px 52px 0px;
+			background-color: var(--clr-common-white);
+			text-align: center;
+			border-radius: 10px 10px 0px 0px;
+		}
+		&-icon {
+			margin-bottom: 35px;
+			figure {
+				position: relative;
+				&:before {
+					position: absolute;
+					content: "";
+					width: 100px;
+					height: 100px;
+					border: 1px solid #f3f3f3;
+					border-radius: 50px;
+					left: 50%;
+					transform: translate(-50%, -15px);
+					z-index: 2;
+				}
+			}
+			i {
+				position: relative;
+				width: 70px;
+				height: 70px;
+				line-height: 70px;
+				text-align: center;
+				border-radius: 50px;
+				color: var(--clr-common-white);
+				font-size: 22px;
+				background-image: linear-gradient(to right, #141f2b, #141f2b, #0ed5fa, #684cb1);
+				background-position: 100% 100%;
+				background-size: 300% 100%;
+				box-shadow: 0px 16px 32px 0px rgba(69, 129, 206, 0.3);
+				z-index: 2;
+			}
+		}
+		&-content {
+			span {
+				font-size: 14px;
+			}
+			h3 {
+				a {
+					font-size: 24px;
+					&:hover {
+						color: var(--clr-theme-1);
+					}
+				}
+			}
+		}
+	}
+}
+

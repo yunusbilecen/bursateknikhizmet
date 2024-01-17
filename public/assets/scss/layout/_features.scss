@@ -1,0 +1,53 @@
+
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  18. FEATURES CSS START
+/*----------------------------------------*/
+
+.features__thunb-warpper {
+  position: relative;
+  z-index: 5;
+  img {
+    margin-left: -310px;
+    @media #{$xs,$sm,$md,$lg,$xl}{
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+}
+.custom__container {
+	max-width: 1530px;
+}
+.features__thunb-1 {
+  position: relative;
+  z-index: 5;
+  @media #{$xs,$sm,$md,$lg}{
+    width: 100%;
+  }
+  @media #{$xs,$sm,$md}{
+    @include border-radius(10px);
+  }
+}
+.features__thunb-2 {
+  position: absolute;
+  left: 0px;
+  z-index: -1;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 10px;
+  @media #{$lg,$xl}{
+    position: static;
+    margin-top: -120px;
+    transform: translate(0);
+  }
+  @media #{$xs,$sm,$md,$lg}{
+    width: 100%;
+  }
+}
+.features__content-wrapper {
+  margin-right: 80px;
+    @media #{$xs,$sm,$md,$lg,$xl}{
+      margin-right: 0px;
+    }
+}

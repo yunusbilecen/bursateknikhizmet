@@ -1,0 +1,145 @@
+@use '../utils' as *;
+/*----------------------------------------*/
+/*  22. HISTORY CSS START
+/*----------------------------------------*/
+
+// HISTORY STYLE
+.history__thunb {
+	img {
+		border-radius: 10px;
+	}
+}
+.history__tab {
+	.nav-tabs {
+		border-bottom: 0;
+		border-bottom: 0;
+		justify-content: center;
+		gap: 155px;
+		display: inline-flex;
+		position: relative;
+		@media #{$md} {
+			gap: 100px;
+		}
+		@media #{$sm} {
+			gap: 70px;
+		}
+		@media #{$xs} {
+			gap: 45px 60px;
+		}
+		.nav-link {
+			margin-bottom: 0;
+			border: 0;
+			font-size: 16px;
+			font-weight: var(--bd-fw-bold);
+		}
+		&::before {
+			position: absolute;
+			content: "";
+			width: calc(100% - 35px);
+			height: 2px;
+			background: #f3f3f3;
+			top: -15px;
+			left: 50%;
+			transform: translateX(-50%);
+			@media #{$xs} {
+				width: calc(90% - 35px);
+		  	}
+			@media #{$xs} {
+					gap:60px;
+			}
+		}
+	}
+	.nav-link {
+		position: relative;
+		color: #cdcecf;
+		padding: 0;
+		border: none;
+		font-weight: 500;
+		&::after {
+			position: absolute;
+			content: "";
+			width: 16px;
+			height: 16px;
+			border-radius: 50px;
+			left: 50%;
+			transform: translateX(-50%);
+			top: -23px;
+			background: linear-gradient(#fff, #fff) padding-box, linear-gradient(90deg, #1f242c, #1f242c) border-box;
+			border: 2px solid transparent;
+			border-radius: 50px;
+		}
+		&.active {
+			&::after {
+				background: linear-gradient(#fff, #fff) padding-box, linear-gradient(90deg, #0ed5fa, #684cb1) border-box;
+				border: 2px solid transparent;
+				border-radius: 50px;
+			}
+		}
+	}
+}
+
+// HISTORY CONTENT
+.history {
+	&__content {
+		&-wrapper {
+			margin-right: 80px;
+			@media #{$xs,$sm,$md,$lg}{
+				margin-right: 0px;
+			}
+		}
+		h2 {
+			font-size: 40px;
+			margin-bottom: 15px;
+			@media #{$xs,$sm,$md,$lg,$xl}{
+				br {
+					display: none;
+				}
+			}
+			@media #{$xl}{
+				font-size: 36px;
+			}
+			@media #{$sm,$lg}{
+				font-size: 30px;
+			}
+			@media #{$xs}{
+				font-size: 26px;
+			}
+		}
+		p {
+			max-width: 550px;
+			margin-bottom: 35px;
+		}
+	}
+	&__thunb {
+		position: relative;
+		&-wrapper {
+			@media #{$xs,$sm,$md,$lg}{
+				margin-right: 0;
+			}
+		}
+	}
+}
+.play__btn {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50% ,-50%);
+	a,
+	.popup-video {
+		width: 100px;
+		height: 100px;
+		background-color: var(--clr-common-white);
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		animation: pulse 2s infinite;
+		font-size: 20px;
+		border-radius: 50%;
+		color: var(--clr-common-heading);
+		cursor: pointer;
+		&:hover {
+			background-color: var(--clr-theme-1);
+			color: var(--clr-common-white);
+		}
+	}
+}

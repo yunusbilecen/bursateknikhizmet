@@ -1,0 +1,241 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  10. ABOUT CSS START
+/*----------------------------------------*/
+
+// ABOUT STYLE
+.about {
+	&__right {
+		&-content {
+			padding-left: 15px;
+			@media #{$lg}{
+				padding-left: 30px;
+			}
+			@media #{$xs,$sm,$md}{
+				padding-left: 0px;
+			}
+		}
+	}
+	&__left {
+		&-thumb {
+			position: relative;
+			text-align: center;
+			@media #{$md} {
+			   text-align: left;
+			}
+			img {
+				margin-top: 50px;
+				max-width: 520px;
+				width: 100%;
+				@media #{$xs}{
+					width: 100%;
+				}
+			}
+		}
+	}
+	&__experience {
+		&-shape {
+			position: absolute;
+			top: 0px;
+			left: 0;
+		}
+		&-content {
+			background-color: #1f242c;
+			border-radius: 6px;
+			text-align: center;
+			padding: 40px 34px;
+			position: relative;
+			z-index: 9;
+			h2{
+				color: var(--clr-common-white);
+				font-size: 80px;
+				line-height: 1.1;
+				margin-bottom: 0;
+				.counter-count {
+					color: var(--clr-common-white);
+				}
+			}
+			span {
+			  color: #999;
+			}
+		
+			i {
+				font-size: 100px;
+				position: absolute;
+				left: 0;
+				bottom: 1px;
+				color: #252a32;
+				z-index: -1;
+			}
+		}
+	}
+	&__quote {
+		&-content {
+			position: relative;
+			margin-left: 21px;
+			h3 {
+				font-size: 18px;
+				line-height: 26px;
+				font-weight: 600;
+				margin-bottom: 13px;
+			}
+			&::after {
+				position: absolute;
+				content: "";
+				width: 2px;
+				height: 100%;
+				background: var(--clr-theme-1);
+				top: 2px;
+				left: -20px;
+			}
+		}
+		&-author {
+			h4 {
+				font-size: 14px;
+				font-weight: 600;
+				span {
+					color: var(--clr-text-1);
+					font-weight: var(--bd-fw-normal);
+				}
+			}
+		}
+	}
+	&__description {
+		&-text {
+			p {
+				margin-bottom: 20px;
+			}
+		}
+	}
+}
+// ABOUT STYLE-2
+.about {
+	&__contact {
+		&__item {
+			display: flex;
+			align-items: center;
+			gap: 40px;
+			padding-top: 40px;
+			border-top: 1px solid rgb(240, 240, 240);
+			@media #{$lg,$xs,$sm}{
+				flex-wrap: wrap;
+				gap: 20px;
+			}
+			&.style-2 {
+				border-top: 0;
+				padding-top: 20px;
+				padding-bottom: 40px;
+				border-bottom: 1px solid rgb(240, 240, 240);
+			}
+		}
+		&-icon {
+			width: 60px;
+			height: 60px;
+			background: var(--clr-common-white);
+			box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.06);
+			border-radius: 50%;
+			text-align: center;
+			line-height: 60px;
+			min-width: 60px;
+		}
+		&-content {
+			h4 {
+				a {
+					font-size: 18px;
+					text-transform: uppercase;
+					&:hover {
+						color: var(--clr-theme-1);
+					}
+				}
+			}
+		}
+	}
+	&-content {
+		span {
+			font-size: 14px;
+			color: var(--clr-text-2);
+			text-transform: capitalize;
+		}
+	}
+	&__features {
+		&-wrapper {
+			margin-left: 70px;
+			@media #{$xl}{
+				margin-left: 30px;
+			}
+			@media #{$xs,$sm,$md,$lg}{
+				margin-left: 0;
+			}
+		}
+		&-thumb {
+			@media #{$xs}{
+				padding-top: 0;
+			}
+		}
+		&-shape {
+			position: absolute;
+			z-index: -1;
+			top: -27px;
+			left: -49px;
+			@media #{$lg}{
+				left: 0;
+			}
+			@media #{$sm,$lg,$md}{
+				top: 0;
+			}
+			@media #{$xs}{
+				display: none;
+			}
+		}
+	}
+}
+// ABOUT AUTHOR
+.about {
+	&__wrapper {
+		&-3 {
+			margin-left: 70px;
+			margin-right: 40px;
+			@media #{$xl}{
+				margin-left: 25px;
+				margin-right: 0;
+			}
+			@media #{$lg}{
+			margin-left: 30px;
+			margin-right: 0;
+			}
+			@media #{$xs,$sm,$md}{
+			margin-left: 0px;
+			margin-right: 0;
+			}
+		}
+	}
+	&__author {
+		&-info {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			column-gap: 20px;
+			padding-top: 30px;
+			flex-wrap: wrap;
+			@media #{$sm,$md,$lg}{
+				justify-content: flex-start;
+			}
+			@media #{$xs}{
+				justify-content: flex-start;
+				gap: 15px 20px;
+			}
+		}
+		&-content {
+			text-align: right;
+			h4 {
+				font-size: 18px;
+			}
+			span {
+				font-size: 14px;
+				color: var(--clr-text-2);
+			}
+		}
+	}
+}
+

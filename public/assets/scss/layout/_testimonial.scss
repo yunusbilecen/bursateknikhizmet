@@ -1,0 +1,165 @@
+@use '../utils' as *;
+/*----------------------------------------*/
+/*  31. TESTIMONIAL CSS START
+/*----------------------------------------*/
+
+.testimonial-author-img {
+	margin-right: 20px;
+}
+.testimonial__item-one-content {
+	background-color: rgb(255, 255, 255);
+	@include box-shadow(0px 16px 32px 0px rgba(0, 0, 0, 0.06));
+	@include border-radius(10px);
+	position: relative;
+	padding: 30px 40px 30px 40px;
+	@media #{$lg,$xs,$md}{
+		padding: 30px 20px 30px 20px;
+	}
+	&::before {
+		position: absolute;
+		width: 60px;
+		height: 35px;
+		background: var(--clr-common-white);
+		bottom: -20px;
+		left: 100px;
+		content: "";
+		clip-path: polygon(0 31%, 0% 100%, 100% 33%);
+	}
+	p {
+		font-size: 20px;
+		line-height: 34px;
+		margin-bottom: 0;
+		@media #{$xs,$lg}{
+			font-size:18px;
+		}
+	}
+}
+.testimonial-author {
+	margin-left: 40px;
+	margin-top: 40px;
+}
+.testimonial-author-content {
+	h4 {
+		font-size: 20px;
+		@media #{$xs}{
+			font-size: 18px;
+		}
+	}
+	span {
+		font-size: 14px;
+		text-transform: capitalize;
+	}
+}
+// Teatimnonial style-2
+.testimonial {
+	&__item {
+		background: #14171d;
+		padding: 45px 50px 50px 50px;
+		@include border-radius(10px);
+		@include transition(.5s);
+		overflow: hidden;
+		position: relative;
+		z-index: 5;
+		@media #{$xs,$md,$xl}{
+			padding: 30px 20px 35px 20px;
+		}
+		&::before {
+			position: absolute;
+			content: "";
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			@include  transition(.3s);
+			z-index: -1;
+			background-image: -moz-linear-gradient( 0deg, rgb(11,218,253) 0%, rgb(106,72,175) 100%);
+			background-image: -webkit-linear-gradient( 0deg, rgb(11,218,253) 0%, rgb(106,72,175) 100%);
+			background-image: -ms-linear-gradient( 0deg, rgb(11,218,253) 0%, rgb(106,72,175) 100%);
+			background-image: linear-gradient( 0deg, rgb(11,218,253) 0%, rgb(106,72,175) 100%);
+			opacity: 0;
+		}
+	}
+	&__rating {
+		-webkit-background-clip: text;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-image: linear-gradient(13deg, #0ed5fa, #684cb1, #684cb1, #0ed5fa);
+		margin-bottom: 15px;
+		font-size: 14px;
+		@include transition(.3s);
+	}
+	&__text {
+		p {
+			font-size: 20px;
+			color: #888e9a;
+			line-height: 34px;
+			margin-bottom: 30px;
+		}
+	}
+	&__avater {
+		&-info {
+			h4 {
+				color: var(--clr-common-white);
+				@media #{$xs}{
+					font-size: 18px;
+				}
+			}
+			span {
+				font-size: 14px;
+				color: var(--clr-text-7);
+				text-transform: capitalize;
+			}
+		}
+	}
+	&__quote-icon {
+		img {
+			position: absolute;
+			bottom: 20px;
+			right: 20px;
+			opacity: 0;
+		}
+	}
+}
+.testimonial__active .swiper-slide-active .testimonial__item::before {
+	opacity: 1;
+}
+.testimonial__active .swiper-slide-active .testimonial__text p {
+	color: var(--clr-common-white);
+}
+.testimonial__active .swiper-slide-active .testimonial__rating {
+	background-image: linear-gradient(13deg, #fff, #fff, #fff, #fff);
+}
+.testimonial__active .swiper-slide-active .testimonial__avater-info span {
+	color: var(--clr-common-white);
+}
+.testimonial__active .swiper-slide-active .testimonial__avater-info span {
+	color: var(--clr-common-white);
+}
+.testimonial__active .swiper-slide-active .testimonial__quote-icon img {
+	opacity: 1;
+}
+	
+// testimonial style-3
+.testimonial__main-wrapper {
+	border-radius: 10px;
+	padding: 65px 80px 105px 80px;
+	background: var(--clr-common-white);
+	box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.06);
+	margin-top: -140px;
+	position: relative;
+	@media #{$xs}{
+		padding: 65px 40px 105px 40px;
+	}
+}
+.testimonial__text-2 p {
+	font-size: 20px;
+	line-height: 34px;
+	margin-bottom: 33px;
+	max-width: 325px;
+	@media #{$xs,$lg}{
+		font-size: 18px;
+	}
+}
+.testimonial__item-2 .testimonial__avater-info h4 {
+	color: var(--clr-common-heading);
+}
