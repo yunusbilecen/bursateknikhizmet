@@ -8,12 +8,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 SwiperCore.use([Pagination, Scrollbar, Navigation, A11y, Autoplay]);
 const TestimonialSlider = () => {
-    useEffect(() => {
-        // Initialize Swiper here if needed
-        const swiper = new Swiper('.swiper-container', {
-            // your swiper configuration options
-        });
-    }, []);
+    
     return (
         <section className="testimonial__area include__bg pt-120 pb-120" style={{ background: "url(/assets/img/bg/testimonial-map.png)" }}>
             <div className="container">

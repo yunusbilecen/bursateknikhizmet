@@ -2,7 +2,6 @@ import { ToastContainer } from 'react-toastify';
 import AppProvider from '../context/AppContext';
 import SEO from '../components/seo';
 import '../styles/index.scss';
-import '../styles/theme.scss';
 
 function MyApp({ Component, pageProps }) {
   return (

@@ -9,12 +9,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 SwiperCore.use([Pagination, Scrollbar, Navigation, A11y, Autoplay]);
 const CaseSectionThree = () => {
-    useEffect(() => {
-        // Initialize Swiper here if needed
-        const swiper = new Swiper('.swiper-container', {
-            // your swiper configuration options
-        });
-    }, []);
+
     return (
         <section className="portfolio__areas portfolio__bg fix pt-115 pb-115">
             <div className="container">

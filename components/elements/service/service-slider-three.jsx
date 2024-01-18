@@ -11,12 +11,6 @@ import 'swiper/css/navigation';
 SwiperCore.use([Pagination, Scrollbar, Navigation, A11y, Autoplay]);
 
 const ServiceSliderThree = () => {
-    useEffect(() => {
-        // Initialize Swiper here if needed
-        const swiper = new Swiper('.swiper-container', {
-            // your swiper configuration options
-        });
-    }, []);
     return (
         <div className="services__slider-active swiper-container">
             <div className="swiper-wrapper">

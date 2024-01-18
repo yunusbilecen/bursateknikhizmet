@@ -9,12 +9,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 SwiperCore.use([Pagination, Scrollbar, Navigation, A11y, Autoplay]);
 const CaseSectionTwo = () => {
-   useEffect(() => {
-      // Initialize Swiper here if needed
-      const swiper = new Swiper('.swiper-container', {
-         // your swiper configuration options
-      });
-   }, []);
+
    return (
       <section className="case__study-area pt-120">
          <div className="container">

@@ -10,12 +10,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 SwiperCore.use([Pagination, Scrollbar, Navigation, A11y, Autoplay]);
 const CaseSlider = () => {
-    useEffect(() => {
-        // Initialize Swiper here if needed
-        const swiper = new Swiper('.swiper-container', {
-            // your swiper configuration options
-        });
-    }, []);
+
     return (
         <div className="portfolio__area fix pt-120 pb-120">
             <div className="container">

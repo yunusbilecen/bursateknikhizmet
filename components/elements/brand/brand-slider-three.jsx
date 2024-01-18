@@ -2,20 +2,16 @@ import React, { useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Pagination, Scrollbar, Navigation, A11y, Autoplay } from 'swiper';
 import 'swiper/swiper-bundle.css';
-
-import brandList from '../../../data/brand-data';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+
+import brandList from '../../../data/brand-data';
+
 SwiperCore.use([Pagination, Scrollbar, Navigation, A11y, Autoplay]);
 
 const BrandSliderThree = () => {
-    useEffect(() => {
-        // Initialize Swiper here if needed
-        const swiper = new Swiper('.swiper-container', {
-            // your swiper configuration options
-        });
-    }, []);
+
 
     return (
         <div className="partner__area pt-110 pb-110">
