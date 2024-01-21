@@ -11,6 +11,7 @@ const ContactsSection = () => {
             try {
                 const result = await postgre.query("select * from company")
                 setRow(result[0]); // Sadece bir satır alıyorsanız
+                alert(result[0])
             } catch (error) {
                 console.error('Error fetching data:', error);
             }
