@@ -8,15 +8,6 @@ module.exports = {
       config.plugins.push(new webpack.HotModuleReplacementPlugin());
     }
 
-    // fs modülünü client-side'da devre dışı bırakma
-    if (!isServer) {
-      config.resolve.fallback = {
-        fs: false,
-        dns: false,
-        net: false,
-        tls: false
-      };
-    }
 
     return config;
   },
