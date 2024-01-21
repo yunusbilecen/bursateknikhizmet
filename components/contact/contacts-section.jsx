@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import ContactForm from './contact-form';
-import postgre from '../../database'
+import postgre from '../../utils/database'
 
 const ContactsSection = () => {
     const [row, setRow] = useState({});
