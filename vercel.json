@@ -2,14 +2,17 @@
     "version": 2,
     "builds": [
         {
-            "src": "./index.js",
-            "use": "@vercel/node"
+            "src": "next.config.js",
+            "use": "@now/next"
         }
     ],
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "/"
+            "dest": "/$1",
+            "headers": {
+                "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload"
+            }
         }
     ]
 }
