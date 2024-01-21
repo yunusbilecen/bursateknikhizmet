@@ -32,7 +32,7 @@ const HeaderTwo = () => {
                                                     </div>
                                                     <div className="header__widget-content">
                                                         <span>İletişime Geç</span>
-                                                        <h4><a href="tel:05325470421">0532 547 04 21</a></h4>
+                                                        <h4><a href="tel:05325470421">0532 547</a></h4>
                                                     </div>
                                                 </div>
                                                 <div className="header__widget-info">
