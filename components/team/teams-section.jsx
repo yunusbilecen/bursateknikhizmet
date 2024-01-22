@@ -2,6 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 import TeamList from '../../data/team-data';
 
+
 const TeamsSection = () => {
     return (
         <section className="team__area pt-120 pb-90">

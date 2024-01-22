@@ -1,3 +1,4 @@
+
 import Link from 'next/link';
 import React from 'react';
 
@@ -10,7 +11,7 @@ const HeroSectionTwo = () => {
                         <div className="col-xxl-6 col-xl-6 col-lg-8">
                             <div className="hero__content-2 p-relative z-index-11 mt-115">
                                 <span>Teknik Çözüm Şirketmize Hoş Geldiniz</span>
-                                <h2>Bursa'nın En  İyi Teknik Hizmetleri</h2>
+                                <h2>Bursa&apos;nın En  İyi Teknik Hizmetleri</h2>
                                 <div className="hero__btn-wrapper">
                                     <Link href="/hizmetler" ><div className="it__btn-2 radius">Sağladığımız Serviler<span><i className="fa-solid fa-arrow-right-long"></i></span></div></Link>
                                     <Link href="/hakkimizda" ><div className="it__btn-3 radius">Daha Çok Öğren<span><i className="fa-solid fa-arrow-right-long"></i></span></div></Link>

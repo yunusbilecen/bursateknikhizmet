@@ -1,3 +1,4 @@
+
 import Link from 'next/link';
 import React from 'react';
 
@@ -7,7 +8,7 @@ const CaseNav = () => {
             <div className="case__nav-items">
                 <div className="case__single">
                     <div className="case__thumb">
-                        <Link href="/case-details"><span><img src="/assets/img/portfolio/case/01.jpg" alt="" /></span></Link>
+                        <Link href="/case-details"><span><img src="/assets/img/portfolio/case/01.jpg" alt="" width={300} height={400} /></span></Link>
                     </div>
                     <div className="case__content">
                         <span>Prev Case</span>
@@ -19,7 +20,7 @@ const CaseNav = () => {
                 </div>
                 <div className="case__single">
                     <div className="case__thumb">
-                        <Link href="/case-details" ><span><img src="/assets/img/portfolio/case/02.jpg" alt="" /></span></Link>
+                        <Link href="/case-details" ><span><img src="/assets/img/portfolio/case/02.jpg" alt="" width={300} height={400} /></span></Link>
                     </div>
                     <div className="case__content">
                         <span>Next Case</span>

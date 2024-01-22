@@ -3,6 +3,7 @@ import React from 'react';
 import { useState } from 'react';
 import useGlobalContext from '../../hooks/use-context';
 
+
 const Sidebar = () => {
     const { showSidebar, setShowSidebar } = useGlobalContext();
     const [home, setHome] = useState(false);

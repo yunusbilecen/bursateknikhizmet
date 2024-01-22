@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 const PageTitle = () => {
@@ -12,15 +13,15 @@ const PageTitle = () => {
                             </div>
                             <form action="#">
                                 <div className="faq__search-input">
-                                    <input type="text" placeholder="Search it sulation..."/>
-                                        <button>Submit</button>
+                                    <input type="text" placeholder="Search it sulation..." />
+                                    <button>Submit</button>
                                 </div>
                             </form>
                         </div>
                     </div>
                 </div>
                 <div className="faq__banner-thumb">
-                    <img src="/assets/img/faq/faq-banner.png" alt="image not found"/>
+                    <img src="/assets/img/faq/faq-banner.png" alt="image not found" />
                 </div>
             </div>
         </section>

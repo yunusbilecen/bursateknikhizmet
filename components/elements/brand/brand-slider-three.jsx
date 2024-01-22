@@ -8,6 +8,7 @@ import 'swiper/css/navigation';
 
 import brandList from '../../../data/brand-data';
 
+
 SwiperCore.use([Pagination, Scrollbar, Navigation, A11y, Autoplay]);
 
 const BrandSliderThree = () => {

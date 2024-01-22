@@ -2,6 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 import caseList from '../../data/case-data';
 
+
 const CasesStudySection = () => {
     return (
         <>

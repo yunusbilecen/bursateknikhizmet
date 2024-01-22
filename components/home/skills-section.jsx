@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { useState } from 'react';
 import ModalVideo from 'react-modal-video';
@@ -21,7 +22,7 @@ const SkillsSection = () => {
                                 <h4>Design & Servicing</h4>
                                 <span className="progress-count">64%</span>
                                 <div className="progress">
-                                    <div className="progress-bar wow slideInLeft" data-wow-duration="1s" data-wow-delay=".3s" role="progressbar" data-width="64%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style={{width: '64%',visibility: 'visible'}}>
+                                    <div className="progress-bar wow slideInLeft" data-wow-duration="1s" data-wow-delay=".3s" role="progressbar" data-width="64%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style={{ width: '64%', visibility: 'visible' }}>
                                     </div>
                                 </div>
                             </div>
@@ -29,7 +30,7 @@ const SkillsSection = () => {
                                 <h4>Support & Productivity</h4>
                                 <span className="progress-count">82%</span>
                                 <div className="progress">
-                                    <div className="progress-bar wow slideInLeft" data-wow-duration="1s" data-wow-delay=".3s" role="progressbar" data-width="82%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style={{width: '82%',visibility: 'visible'}}>
+                                    <div className="progress-bar wow slideInLeft" data-wow-duration="1s" data-wow-delay=".3s" role="progressbar" data-width="82%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style={{ width: '82%', visibility: 'visible' }}>
                                     </div>
                                 </div>
                             </div>
@@ -37,7 +38,7 @@ const SkillsSection = () => {
                                 <h4>Troubleshooting</h4>
                                 <span className="progress-count">70%</span>
                                 <div className="progress">
-                                    <div className="progress-bar wow slideInLeft" data-wow-duration="1s" data-wow-delay=".3s" role="progressbar" data-width="70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style={{width: '70%',visibility: 'visible'}}>
+                                    <div className="progress-bar wow slideInLeft" data-wow-duration="1s" data-wow-delay=".3s" role="progressbar" data-width="70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style={{ width: '70%', visibility: 'visible' }}>
                                     </div>
                                 </div>
                             </div>
@@ -47,7 +48,7 @@ const SkillsSection = () => {
                         <div className="skill__image-wrapper mb-60">
                             <ModalVideo channel='youtube' isOpen={isOpen} videoId='vWLcyFtni6U' onClose={() => { openVideoModal(); }} />
                             <div className="skill__image pl-25 p-relative w-img">
-                                <img src="/assets/img/skill/skills-img.png" alt="image not found"/>
+                                <img src="/assets/img/skill/skills-img.png" alt="image not found" />
                                 <span className="skill__video-btn popup-video" onClick={() => { openVideoModal(); }}><i className="fa-solid fa-play"></i></span>
                             </div>
                         </div>

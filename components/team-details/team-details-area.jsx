@@ -4,6 +4,7 @@ import Breadcrumb from '../common/breadcrumb';
 import TeamAchivement from './team-achivement';
 import TeamSkill from './team-skill';
 
+
 const TeamDetailsArea = ({ item }) => {
     return (
         <>

@@ -2,6 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 import Counter from '../common/counter';
 
+
 const AboutSection = () => {
     return (
         <section className="about__area pt-80 pb-60">
@@ -32,7 +33,7 @@ const AboutSection = () => {
                             <div className="about__description-text">
                                 <h4>10 Yıldır Güvenle Yanınızda</h4>
 
-                                <p><strong>Bursa Teknik Hizmet</strong>, beyaz eşya tamiri, klima temizliği, kombi ve petek temizliği alanlarında uzmanlaşmış, 7/24 kesintisiz hizmet sunan köklü bir firma olarak Bursa'da faaliyet göstermektedir. 10 yıldan fazla süredir sektörde liderliği elinde tutan firma olarak, müşteri memnuniyetini her zaman önceliğimiz olarak kabul ediyoruz.</p>
+                                <p><strong>Bursa Teknik Hizmet</strong>, beyaz eşya tamiri, klima temizliği, kombi ve petek temizliği alanlarında uzmanlaşmış, 7/24 kesintisiz hizmet sunan köklü bir firma olarak Bursa&apos;da faaliyet göstermektedir. 10 yıldan fazla süredir sektörde liderliği elinde tutan firma olarak, müşteri memnuniyetini her zaman önceliğimiz olarak kabul ediyoruz.</p>
 
                                 <h4>Hizmetlerimiz</h4>
 

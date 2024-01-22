@@ -7,6 +7,7 @@ import brandList from '../../../data/brand-data';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+
 SwiperCore.use([Pagination, Scrollbar, Navigation, A11y, Autoplay]);
 const BrandSlider = () => {
 

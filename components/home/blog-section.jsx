@@ -2,6 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 import blogList from '../../data/blog-data';
 
+
 const BlogSection = () => {
     return (
         <section className="news__area pt-120 pb-55">

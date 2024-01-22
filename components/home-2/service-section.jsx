@@ -2,6 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 import ServicesList from '../../data/services-data';
 
+
 const ServiceSection = ({ service_space }) => {
     return (
         <div className={`${service_space ? service_space : 'service__area-one section-bg pt-180 pb-90'}`}>

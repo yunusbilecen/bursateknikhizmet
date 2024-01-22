@@ -3,6 +3,7 @@ import React from 'react';
 import ServiceSidebar from './service-sidebar';
 import ServiceWorks from './service-works';
 
+
 const ServiceDetailsArea = ({ item }) => {
     return (
         <>

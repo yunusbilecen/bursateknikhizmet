@@ -2,6 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 import ServicesList from '../../data/services-data';
 
+
 const FaqTopic = () => {
     return (
         <section className="faq__topic-area pb-95">
