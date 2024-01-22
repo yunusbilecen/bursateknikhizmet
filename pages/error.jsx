@@ -1,4 +1,4 @@
-import SEO from '../components/seo';
+import SEO from '../components/SEO';
 import Wrapper from '../layout/wrapper';
 import ErrorMain from '../components/error';
 

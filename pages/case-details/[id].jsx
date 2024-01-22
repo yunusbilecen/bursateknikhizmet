@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import CaseDetailsArea from '../../components/case-details/case-details-area';
-import SEO from '../../components/seo';
+import SEO from '../../components/SEO';
 import caseList from '../../data/case-data';
 import Footer from '../../layout/footers/footer';
 import HeaderThree from '../../layout/headers/header-three';
