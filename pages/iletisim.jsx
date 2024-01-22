@@ -1,11 +1,11 @@
-import SEO from '../components/seo';
 import Wrapper from '../layout/wrapper';
 import ContactMain from '../components/contact';
+import MySeo from '../components/MySeo';
 
 const index = () => {
   return (
     <Wrapper>
-      <SEO pageTitle={'Contact'} />
+      <MySeo pageTitle={'Contact'} />
       <ContactMain />
     </Wrapper>
   );

@@ -1,10 +1,10 @@
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
-import SEO from '../../components/seo';
 import TeamList from '../../data/team-data';
 import Footer from '../../layout/footers/footer';
 import TeamDetailsArea from '../../components/team-details/team-details-area'
 import HeaderThree from '../../layout/headers/header-three';
+import MySeo from '../../components/MySeo';
 
 const TeamsDetails = () => {
   const router = useRouter();
@@ -24,7 +24,7 @@ const TeamsDetails = () => {
 
   return (
     <>
-      <SEO pageTitle={'Team Details'} />
+      <MySeo pageTitle={'Team Details'} />
       <HeaderThree />
       <main>
         <TeamDetailsArea item={team} />

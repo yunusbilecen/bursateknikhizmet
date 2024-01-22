@@ -1,13 +1,13 @@
 // /pages/hakkimizda/index.jsx
 import React from 'react';
-import SEO from '../components/seo';
 import Wrapper from '../layout/wrapper';
 import AboutMain from '../components/about';
+import MySeo from '../components/MySeo';
 
 const Hakkimizda = () => {
   return (
     <Wrapper>
-      <SEO pageTitle={'Hakkımızda'} />
+      <MySeo pageTitle={'Hakkımızda'} />
       <AboutMain />
     </Wrapper>
   );

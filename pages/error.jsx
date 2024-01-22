@@ -1,11 +1,11 @@
-import SEO from '../components/SEO';
 import Wrapper from '../layout/wrapper';
 import ErrorMain from '../components/error';
+import MySeo from '../components/MySeo';
 
 const index = () => {
   return (
     <Wrapper>
-      <SEO pageTitle={'Faq'} />
+      <MySeo pageTitle={'Faq'} />
       <ErrorMain />
     </Wrapper>
   );

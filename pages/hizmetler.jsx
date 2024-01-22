@@ -1,11 +1,11 @@
-import SEO from '../components/seo';
 import Wrapper from '../layout/wrapper';
 import ServiceMain from '../components/service';
+import MySeo from '../components/MySeo';
 
 const index = () => {
   return (
     <Wrapper>
-      <SEO pageTitle={'Service'} />
+      <MySeo pageTitle={'Service'} />
       <ServiceMain />
     </Wrapper>
   );

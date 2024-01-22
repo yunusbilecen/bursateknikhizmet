@@ -1,10 +1,10 @@
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
-import SEO from '../../components/seo';
 import Footer from '../../layout/footers/footer';
 import ServiceDetailsArea from '../../components/service-details/service-details-area';
 import ServicesList from '../../data/services-data';
 import HeaderThree from '../../layout/headers/header-three';
+import MySeo from '../../components/MySeo';
 
 const ServicesDetails = () => {
   const router = useRouter();
@@ -24,7 +24,7 @@ const ServicesDetails = () => {
 
   return (
     <>
-      <SEO pageTitle={'Service Details'} />
+      <MySeo pageTitle={'Service Details'} />
       <HeaderThree />
 
       <main >

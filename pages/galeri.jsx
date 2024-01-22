@@ -1,11 +1,11 @@
-import SEO from '../components/seo';
+import MySeo from '../components/MySeo';
 import Wrapper from '../layout/wrapper';
 import CaseStudyMain from '../components/case-study';
 
 const index = () => {
   return (
     <Wrapper>
-      <SEO pageTitle={'Case Study'} />
+      <MySeo pageTitle={'Case Study'} />
       <CaseStudyMain />
     </Wrapper>
   );

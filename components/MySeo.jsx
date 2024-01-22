@@ -1,5 +1,5 @@
 import Head from "next/head";
-const SEO = ({ pageTitle }) => (
+const MySeo = ({ pageTitle }) => (
   <>
     <Head>
       <title>
@@ -18,4 +18,4 @@ const SEO = ({ pageTitle }) => (
   </>
 );
 
-export default SEO;
+export default MySeo;

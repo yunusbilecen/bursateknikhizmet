@@ -1,11 +1,11 @@
 import React from 'react';
-import SEO from '../../components/seo';
 import ServiceDetailsMain from '../../components/service-details'
+import MySeo from '../../components/MySeo';
 
 const index = () => {
     return (
         <>
-            <SEO pageTitle={'Service Details'} />
+            <MySeo pageTitle={'Service Details'} />
             <ServiceDetailsMain />
         </>
     );
