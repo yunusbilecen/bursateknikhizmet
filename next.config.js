@@ -5,6 +5,5 @@ module.exports = {
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
   },
-  target: 'serverless', // Serverless hedefini ekledik
-  // Diğer konfigürasyon ayarları...
+  target: 'experimental-serverless-trace', // target ayarını güncelledik
 };
