@@ -1,24 +1,23 @@
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import ContactForm from './contact-form';
-import postgre from '../../utils/database'
+import pool from '../../database/index'
 
 const ContactsSection = () => {
-    /* const [row, setRow] = useState({});
- 
-     useEffect(() => {
-         const fetchData = async () => {
-             try {
-                 const result = await postgre.query("select * from company")
-                 setRow(result[0]); // Sadece bir satır alıyorsanız
-                 alert(result[0])
-             } catch (error) {
-                 console.error('Error fetching data:', error);
-             }
-         };
- 
-         fetchData();
-     }, []);*/
+    const [row, setRow] = useState({});
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const [rows, fields] = await pool.query("SELECT * FROM company");
+                setRow(rows[0]); // Sadece bir satır alıyorsanız
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
+        };
+
+        fetchData();
+    }, []);
     return (
         <section className="contact__area pt-80 pb-80">
             <div className="container">
@@ -35,7 +34,7 @@ const ContactsSection = () => {
                                 </div>
                                 <div className="contact__info-content">
                                     <span>Dilediğiniz Zaman Arayın</span>
-                                    <h5><a href="tel:05325470421"></a></h5>
+                                    <h5><a href="tel:05325470421">{row.phone}</a></h5>
                                 </div>
                             </div>
                             <div className="contact__info-item">
