@@ -1,23 +1,9 @@
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import ContactForm from './contact-form';
-import pool from '../../database/index'
 
-const ContactsSection = () => {
-    const [row, setRow] = useState({});
+const ContactsSection = ({ companyData }) => {
 
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const [rows, fields] = await pool.query("SELECT * FROM company");
-                setRow(rows[0]); // Sadece bir satır alıyorsanız
-            } catch (error) {
-                console.error('Error fetching data:', error);
-            }
-        };
-
-        fetchData();
-    }, []);
     return (
         <section className="contact__area pt-80 pb-80">
             <div className="container">
@@ -34,7 +20,7 @@ const ContactsSection = () => {
                                 </div>
                                 <div className="contact__info-content">
                                     <span>Dilediğiniz Zaman Arayın</span>
-                                    <h5><a href="tel:05325470421">{row.phone}</a></h5>
+                                    <h5><a href="tel:05325470421">{companyData.phone}</a></h5>
                                 </div>
                             </div>
                             <div className="contact__info-item">
@@ -52,7 +38,7 @@ const ContactsSection = () => {
                                 </div>
                                 <div className="contact__info-content">
                                     <span>Bizi Ziyaret Et</span>
-                                    <h5><Link href="https://www.google.com/maps/@23.8272409,90.3665795,11z?hl=en" ><div >Demirtaş Cumhuriyet, 204. Sk. D:No.6, 16245 Osmangazi/Bursa</div></Link></h5>
+                                    <h5><Link href="" ><div >Demirtaş Cumhuriyet, 204. Sk. D:No.6, 16245 Osmangazi/Bursa</div></Link></h5>
                                 </div>
                             </div>
                         </div>

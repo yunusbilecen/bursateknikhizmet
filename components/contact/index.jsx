@@ -5,13 +5,13 @@ import ContactMap from './contact-map';
 import ContactsSection from './contacts-section';
 import HeaderTwo from '../../layout/headers/header-two';
 
-const index = () => {
+const index = ({ companyData }) => {
     return (
         <>
             <HeaderTwo />
             <main>
                 <Breadcrumb breadTitle={'Bize Ulaşın'} breadSubtitle={'İletişim'} />
-                <ContactsSection />
+                <ContactsSection companyData={companyData} />
                 <ContactMap />
             </main>
             <Footer footer_area="footer__area footer-bg pt-95" />
