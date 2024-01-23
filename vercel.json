@@ -1,7 +1,8 @@
 {
     "functions": {
-        "api/**/*.js": {
-            "runtime": "now-php@1.0.0"
+        "pages/api/**/*.js": {
+            "memory": 512,
+            "maxDuration": 10
         }
     }
 }
